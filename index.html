@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,11 @@
   <!-- daisy ui and tailwind css -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 
   <script>
     tailwind.config = {
@@ -20,7 +26,52 @@
     }
   </script>
 </head>
+
 <body>
-  
+  <header>
+    <!-- navbar section -->
+   <section class="container mx-auto px-4 md:px-8 lg:px-16 py-9
+   ">
+    <div class="navbar  flex justify-center items-center">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <label tabindex="0" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </label>
+          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+            <li class="mx-6 text-[#707070]"><a>Home </a></li>
+            <li class="mx-6 text-[#707070]"><a>Services <i class="fa-solid fa-chevron-right"></i></a></li>
+            <li class="mx-6 text-[#707070]"><a>Cases <i class="fa-solid fa-chevron-right"></i></a></li>
+            <li class="mx-6 text-[#707070]"><a>Blog <i class="fa-solid fa-chevron-right"></i></a></li>
+            <li class="mx-6 text-[#707070]"><a>Contact Us <i class="fa-solid fa-chevron-right"></i></a></li>
+          </ul>
+        </div>
+        <a class="flex justify-start items-center ">
+          <img src="./images/logo.png" alt="">
+          <p class="text-[#414040] -ml-24 font-extrabold text-4xl">Justice</p>
+        </a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li class="mx-6 text-[#707070]"><a>Home </a></li>
+          <li class="mx-6 text-[#707070]"><a>Services <i class="fa-solid fa-chevron-right"></i></a></li>
+          <li class="mx-6 text-[#707070]"><a>Cases <i class="fa-solid fa-chevron-right"></i></a></li>
+          <li class="mx-6 text-[#707070]"><a>Blog <i class="fa-solid fa-chevron-right"></i></a></li>
+          <li class="mx-6 text-[#707070]"><a>Contact Us <i class="fa-solid fa-chevron-right"></i></a></li>
+        </ul>
+      </div>
+      <div class="navbar-end hidden sm:block">
+        <a class="btn text-white bg-[#B68C5A]">Free Consultation</a>
+      </div>
+    </div>
+   </section>
+   
+ 
+  </header>
+  <main></main>
+  <footer></footer>
 </body>
+
 </html>
